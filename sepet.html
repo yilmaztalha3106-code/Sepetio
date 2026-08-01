@@ -47,3 +47,39 @@
 </body>
 
 </html>
+function loadCart(){
+
+    let area = document.getElementById("cartArea");
+
+    if(!area) return;
+
+
+    let cart = JSON.parse(localStorage.getItem("cart")) || [];
+
+
+    if(cart.length === 0){
+
+        area.innerHTML = "<h3>Sepetiniz boş</h3>";
+        return;
+
+    }
+
+
+    area.innerHTML = "";
+
+
+    cart.forEach(item => {
+
+        area.innerHTML += `
+        <div class="product">
+        <h3>${item.name}</h3>
+        <p>${item.price} TL</p>
+        </div>
+        `;
+
+    });
+
+}
+
+
+loadCart();
