@@ -127,3 +127,42 @@ function searchProduct(){
 updateCartCount();
 
 loadCart();
+// Örnek ürün verileri
+let products = JSON.parse(localStorage.getItem("products")) || [];
+
+
+// Ana sayfadaki ürünleri göster
+function showProducts(){
+
+    let area = document.getElementById("productArea");
+
+    if(!area) return;
+
+
+    area.innerHTML = "";
+
+
+    products.forEach((product)=>{
+
+        area.innerHTML += `
+
+        <div class="product">
+
+            <h3>${product.name}</h3>
+
+            <p>${product.price} TL</p>
+
+            <button onclick="addToCart('${product.name}',${product.price})">
+            Sepete Ekle
+            </button>
+
+        </div>
+
+        `;
+
+    });
+
+}
+
+
+showProducts();
