@@ -59,3 +59,21 @@ function addProduct(){
 function profile(){
     alert("Profil sistemi yakında eklenecek!");
 }
+function searchProduct(){
+
+let text = document.getElementById("searchInput").value.toLowerCase();
+
+let products = document.querySelectorAll(".product");
+
+products.forEach(product=>{
+
+if(product.innerText.toLowerCase().includes(text)){
+product.style.display="block";
+}
+else{
+product.style.display="none";
+}
+
+});
+
+}
