@@ -28,3 +28,31 @@ function showCart() {
 
     alert(message);
 }
+function addProduct(){
+
+    let name = document.getElementById("productName").value;
+    let price = document.getElementById("productPrice").value;
+
+
+    if(name === "" || price === ""){
+        alert("Lütfen tüm alanları doldurun!");
+        return;
+    }
+
+
+    let products = JSON.parse(localStorage.getItem("products")) || [];
+
+
+    products.push({
+        name: name,
+        price: price
+    });
+
+
+    localStorage.setItem("products", JSON.stringify(products));
+
+
+    alert("Ürün başarıyla eklendi!");
+
+    window.location.href = "index.html";
+}
