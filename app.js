@@ -56,3 +56,6 @@ function addProduct(){
 
     window.location.href = "index.html";
 }
+function profile(){
+    alert("Profil sistemi yakında eklenecek!");
+}
