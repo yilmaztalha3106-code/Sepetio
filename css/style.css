@@ -463,3 +463,285 @@ transform:translateY(-6px);
 box-shadow:var(--shadow-md);
 
 }
+/* ==========================================================
+   PRODUCT GRID
+========================================================== */
+
+.product-grid{
+display:grid;
+grid-template-columns:repeat(auto-fill,minmax(260px,1fr));
+gap:24px;
+}
+
+.product-card{
+position:relative;
+background:#fff;
+border-radius:22px;
+overflow:hidden;
+box-shadow:var(--shadow-sm);
+transition:var(--transition);
+border:1px solid var(--gray-200);
+}
+
+.product-card:hover{
+transform:translateY(-8px);
+box-shadow:var(--shadow-lg);
+}
+
+.product-image{
+position:relative;
+aspect-ratio:1/1;
+background:var(--gray-100);
+overflow:hidden;
+}
+
+.product-image img{
+width:100%;
+height:100%;
+object-fit:cover;
+transition:.5s;
+}
+
+.product-card:hover .product-image img{
+transform:scale(1.08);
+}
+
+.discount-badge{
+position:absolute;
+top:16px;
+left:16px;
+background:var(--danger);
+color:#fff;
+padding:8px 12px;
+border-radius:999px;
+font-size:13px;
+font-weight:700;
+z-index:2;
+}
+
+.favorite-btn{
+position:absolute;
+top:16px;
+right:16px;
+width:42px;
+height:42px;
+border-radius:50%;
+background:#fff;
+display:flex;
+align-items:center;
+justify-content:center;
+box-shadow:var(--shadow-md);
+font-size:20px;
+transition:var(--transition);
+z-index:2;
+}
+
+.favorite-btn:hover{
+background:var(--primary);
+color:#fff;
+}
+
+.product-content{
+padding:20px;
+}
+
+.product-brand{
+font-size:13px;
+color:var(--gray-500);
+margin-bottom:6px;
+font-weight:600;
+}
+
+.product-title{
+font-size:17px;
+font-weight:700;
+line-height:1.45;
+height:50px;
+overflow:hidden;
+margin-bottom:12px;
+}
+
+.product-rating{
+display:flex;
+align-items:center;
+gap:8px;
+margin-bottom:12px;
+font-size:14px;
+}
+
+.product-stars{
+color:#f59e0b;
+}
+
+.product-comments{
+color:var(--gray-500);
+}
+
+.product-price{
+display:flex;
+align-items:flex-end;
+gap:10px;
+margin-bottom:15px;
+}
+
+.current-price{
+font-size:28px;
+font-weight:800;
+color:var(--primary);
+}
+
+.old-price{
+font-size:15px;
+color:var(--gray-400);
+text-decoration:line-through;
+}
+
+.product-stock{
+display:inline-flex;
+align-items:center;
+padding:6px 12px;
+border-radius:999px;
+font-size:12px;
+font-weight:700;
+margin-bottom:18px;
+background:#dcfce7;
+color:#166534;
+}
+
+.stock-low{
+background:#fef3c7;
+color:#92400e;
+}
+
+.stock-out{
+background:#fee2e2;
+color:#991b1b;
+}
+
+.product-actions{
+display:flex;
+gap:12px;
+}
+
+.add-cart-btn{
+flex:1;
+height:48px;
+border-radius:14px;
+background:var(--primary);
+color:#fff;
+font-weight:700;
+transition:var(--transition);
+}
+
+.add-cart-btn:hover{
+background:var(--primary-dark);
+}
+
+.buy-now-btn{
+width:48px;
+height:48px;
+border-radius:14px;
+background:var(--gray-100);
+transition:var(--transition);
+}
+
+.buy-now-btn:hover{
+background:var(--secondary);
+color:#fff;
+}
+
+/* ==========================================================
+   CAMPAIGN
+========================================================== */
+
+.campaign-box{
+background:linear-gradient(135deg,#2563eb,#4f46e5);
+padding:70px;
+border-radius:28px;
+color:#fff;
+text-align:center;
+box-shadow:var(--shadow-lg);
+}
+
+.campaign-box h2{
+font-size:42px;
+margin-bottom:18px;
+}
+
+.campaign-box p{
+font-size:20px;
+opacity:.95;
+margin-bottom:30px;
+}
+
+.campaign-box button{
+padding:16px 34px;
+border-radius:999px;
+background:#fff;
+color:var(--primary);
+font-weight:800;
+transition:var(--transition);
+}
+
+.campaign-box button:hover{
+transform:translateY(-4px);
+}
+
+/* ==========================================================
+   BUTTONS
+========================================================== */
+
+.btn{
+display:inline-flex;
+align-items:center;
+justify-content:center;
+padding:14px 28px;
+border-radius:14px;
+font-weight:700;
+transition:var(--transition);
+}
+
+.btn-primary{
+background:var(--primary);
+color:#fff;
+}
+
+.btn-primary:hover{
+background:var(--primary-dark);
+}
+
+.btn-outline{
+border:2px solid var(--primary);
+color:var(--primary);
+background:#fff;
+}
+
+.btn-outline:hover{
+background:var(--primary);
+color:#fff;
+}
+
+/* ==========================================================
+   FORMS
+========================================================== */
+
+.input{
+width:100%;
+height:52px;
+padding:0 18px;
+background:#fff;
+border:1px solid var(--gray-300);
+border-radius:14px;
+transition:var(--transition);
+}
+
+.input:focus{
+border-color:var(--primary);
+box-shadow:0 0 0 4px rgba(37,99,235,.12);
+}
+
+textarea.input{
+height:140px;
+padding:16px 18px;
+resize:vertical;
+}
