@@ -2,187 +2,138 @@
 <html lang="tr">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sepetio V3</title>
 
-    <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<meta name="viewport"
+content="width=device-width, initial-scale=1.0">
 
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<title>Sepetio</title>
+
+<link rel="preconnect"
+href="https://fonts.googleapis.com">
+
+<link rel="preconnect"
+href="https://fonts.gstatic.com"
+crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+rel="stylesheet">
+
+<link rel="stylesheet"
+href="style.css">
+
+<link rel="icon"
+href="assets/icons/logo.png">
 
 </head>
 
 <body>
 
+<!-- LOADER -->
+
 <div id="loader">
-    <h1>SEPETIO</h1>
+
+    <div class="loader-logo">
+
+        <h1>Sepetio</h1>
+
+    </div>
+
 </div>
+
+<!-- HEADER -->
 
 <header class="header">
 
-    <div class="logo">
-        <h1>Sepetio</h1>
-    </div>
+<div class="container">
 
-    <form class="search-form">
+<div class="logo">
 
-        <input
-            type="text"
-            placeholder="Ürün, marka veya kategori ara...">
+<a href="index.html">
 
-        <button type="submit">
-            Ara
-        </button>
+<h1>Sepetio</h1>
 
-    </form>
+</a>
 
-    <div class="header-buttons">
+</div>
 
-        <button class="favorite-btn">
-            ❤️
-        </button>
+<form class="search-form">
 
-        <button class="cart-btn">
-            🛒
-            <span class="cart-count">0</span>
-        </button>
+<input
+type="text"
+placeholder="Ürün, marka veya kategori ara...">
 
-        <button class="login-btn">
-            Giriş Yap
-        </button>
+<button
+type="submit">
 
-    </div>
+🔍
+
+</button>
+
+</form>
+
+<div class="header-actions">
+
+<button
+class="icon-btn favorite-btn">
+
+❤️
+
+</button>
+
+<button
+class="icon-btn cart-btn">
+
+🛒
+
+<span class="cart-count">
+
+0
+
+</span>
+
+</button>
+
+<button
+class="login-btn">
+
+Giriş Yap
+
+</button>
+
+</div>
+
+</div>
 
 </header>
 
-<nav class="menu">
+<!-- MENÜ -->
 
-    <a href="#">Elektronik</a>
-    <a href="#">Moda</a>
-    <a href="#">Bilgisayar</a>
-    <a href="#">Ev</a>
-    <a href="#">Spor</a>
-    <a href="#">Oyun</a>
+<nav class="navbar">
+
+<div class="container">
+
+<ul>
+
+<li><a href="#">Elektronik</a></li>
+
+<li><a href="#">Bilgisayar</a></li>
+
+<li><a href="#">Telefon</a></li>
+
+<li><a href="#">Moda</a></li>
+
+<li><a href="#">Ev & Yaşam</a></li>
+
+<li><a href="#">Spor</a></li>
+
+<li><a href="#">Kozmetik</a></li>
+
+<li><a href="#">Market</a></li>
+
+</ul>
+
+</div>
 
 </nav>
-
-<section class="hero">
-
-    <div class="hero-left">
-
-        <span class="badge">
-            🔥 Yeni Kampanya
-        </span>
-
-        <h2>
-            Teknolojide Büyük İndirim
-        </h2>
-
-        <p>
-
-            Binlerce üründe fırsatlar seni bekliyor.
-
-        </p>
-
-        <button class="hero-btn">
-
-            Alışverişe Başla
-
-        </button>
-
-    </div>
-
-    <div class="hero-right">
-
-        <img src="https://picsum.photos/700/500?random=1" alt="Banner">
-
-    </div>
-
-</section>
-
-<section class="categories">
-
-    <h2>Kategoriler</h2>
-
-    <div class="category-grid">
-
-        <div class="category-card">📱 Elektronik</div>
-        <div class="category-card">💻 Bilgisayar</div>
-        <div class="category-card">⌚ Akıllı Saat</div>
-        <div class="category-card">🎮 Oyun</div>
-        <div class="category-card">👕 Moda</div>
-        <div class="category-card">🏠 Ev</div>
-
-    </div>
-
-</section>
-
-<section class="products">
-
-    <h2>Popüler Ürünler</h2>
-
-    <div id="productsGrid" class="products-grid"></div>
-
-</section>
-
-<footer class="footer">
-
-    <h2>Sepetio</h2>
-
-    <p>© 2026 Tüm Hakları Saklıdır.</p>
-
-</footer>
-
-<script src="urunler.js"></script>
-<script src="app.js"></script>
-
-</body>
-</html>
-<!-- KAMPANYALAR -->
-
-<section class="campaigns">
-
-    <div class="campaign-card blue">
-
-        <div class="campaign-text">
-
-            <span>🔥 Flaş Fırsat</span>
-
-            <h2>%50'ye Varan İndirim</h2>
-
-            <p>
-                Elektronik ürünlerde sınırlı süreli kampanya.
-            </p>
-
-            <button>
-                İncele
-            </button>
-
-        </div>
-
-    </div>
-
-    <div class="campaign-card orange">
-
-        <div class="campaign-text">
-
-            <span>🚚 Ücretsiz Kargo</span>
-
-            <h2>750 TL ve Üzeri</h2>
-
-            <p>
-                Türkiye'nin her yerine ücretsiz teslimat.
-            </p>
-
-            <button>
-                Alışverişe Başla
-            </button>
-
-        </div>
-
-    </div>
-
-</section>
