@@ -4,290 +4,139 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sepetio V2</title>
+    <title>Sepetio V3</title>
 
     <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
 </head>
 
 <body>
 
-    <!-- LOADER -->
-    <div id="loader">
-        <h1>SEPETIO</h1>
+<div id="loader">
+    <h1>SEPETIO</h1>
+</div>
+
+<header class="header">
+
+    <div class="logo">
+        <h1>Sepetio</h1>
     </div>
 
-    <!-- HEADER -->
-    <header class="header">
+    <form class="search-form">
 
-        <div class="logo">
-            <h1>Sepetio</h1>
-        </div>
+        <input
+            type="text"
+            placeholder="Ürün, marka veya kategori ara...">
 
-        <form class="search-form">
+        <button type="submit">
+            Ara
+        </button>
 
-            <input
-                type="text"
-                placeholder="Ürün, marka veya kategori ara...">
+    </form>
 
-            <button type="submit">
-                Ara
-            </button>
+    <div class="header-buttons">
 
-        </form>
+        <button class="favorite-btn">
+            ❤️
+        </button>
 
-        <div class="header-buttons">
+        <button class="cart-btn">
+            🛒
+            <span class="cart-count">0</span>
+        </button>
 
-            <button class="favorite-btn">
-                ❤️ Favoriler
-            </button>
+        <button class="login-btn">
+            Giriş Yap
+        </button>
 
-            <button class="cart-btn">
-                🛒 Sepet
-                <span class="cart-count">0</span>
-            </button>
+    </div>
 
-            <button class="login-btn">
-                Giriş Yap
-            </button>
+</header>
 
-        </div>
+<nav class="menu">
 
-    </header>
+    <a href="#">Elektronik</a>
+    <a href="#">Moda</a>
+    <a href="#">Bilgisayar</a>
+    <a href="#">Ev</a>
+    <a href="#">Spor</a>
+    <a href="#">Oyun</a>
 
-    <!-- MENÜ -->
+</nav>
 
-    <nav class="menu">
+<section class="hero">
 
-        <a href="#">Elektronik</a>
-        <a href="#">Moda</a>
-        <a href="#">Süpermarket</a>
-        <a href="#">Ev Yaşam</a>
-        <a href="#">Kozmetik</a>
-        <a href="#">Spor</a>
-        <a href="#">Oyun</a>
-        <a href="#">Kitap</a>
+    <div class="hero-left">
 
-    </nav>
+        <span class="badge">
+            🔥 Yeni Kampanya
+        </span>
 
-    <!-- HERO -->
+        <h2>
+            Teknolojide Büyük İndirim
+        </h2>
 
-    <section class="hero">
+        <p>
 
-    <div class="hero-content">
+            Binlerce üründe fırsatlar seni bekliyor.
 
-        <div class="hero-text">
+        </p>
 
-            <span class="hero-badge">
-                🔥 Yeni Kampanya
-            </span>
+        <button class="hero-btn">
 
-            <h2>
-                Teknolojide Büyük İndirim
-            </h2>
+            Alışverişe Başla
 
-            <p>
-                Binlerce üründe kaçırılmayacak fırsatlar seni bekliyor.
-            </p>
+        </button>
 
-            <button class="hero-btn">
-                Alışverişe Başla
-            </button>
+    </div>
 
-        </div>
+    <div class="hero-right">
 
-        <div class="hero-image">
-
-            <img
-            src="https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?w=900"
-            alt="Telefon">
-
-        </div>
+        <img src="https://picsum.photos/700/500?random=1" alt="Banner">
 
     </div>
 
 </section>
-<!-- KATEGORİLER -->
 
 <section class="categories">
 
-    <h2 class="section-title">Kategoriler</h2>
+    <h2>Kategoriler</h2>
 
     <div class="category-grid">
 
-        <div class="category-card">
-            <span>📱</span>
-            <p>Elektronik</p>
-        </div>
-
-        <div class="category-card">
-            <span>💻</span>
-            <p>Bilgisayar</p>
-        </div>
-
-        <div class="category-card">
-            <span>🎮</span>
-            <p>Oyun</p>
-        </div>
-
-        <div class="category-card">
-            <span>⌚</span>
-            <p>Akıllı Saat</p>
-        </div>
-
-        <div class="category-card">
-            <span>👕</span>
-            <p>Moda</p>
-        </div>
-
-        <div class="category-card">
-            <span>🏠</span>
-            <p>Ev & Yaşam</p>
-        </div>
-
-        <div class="category-card">
-            <span>📚</span>
-            <p>Kitap</p>
-        </div>
-
-        <div class="category-card">
-            <span>⚽</span>
-            <p>Spor</p>
-        </div>
+        <div class="category-card">📱 Elektronik</div>
+        <div class="category-card">💻 Bilgisayar</div>
+        <div class="category-card">⌚ Akıllı Saat</div>
+        <div class="category-card">🎮 Oyun</div>
+        <div class="category-card">👕 Moda</div>
+        <div class="category-card">🏠 Ev</div>
 
     </div>
 
 </section>
-        <div class="hero-text">
-
-            <h2>
-                Türkiye'nin Yeni Alışveriş Platformu
-            </h2>
-
-            <p>
-                Binlerce mağaza, milyonlarca ürün,
-                güvenli alışveriş deneyimi.
-            </p>
-
-            <button>
-                Alışverişe Başla
-            </button>
-
-        </div>
-
-    </section>
-
-    <!-- ÜRÜNLER BURAYA GELECEK -->
-    <!-- ÜRÜNLER -->
 
 <section class="products">
 
-    <h2 class="section-title">
-        Popüler Ürünler
-    </h2>
+    <h2>Popüler Ürünler</h2>
 
-    <div class="products-grid" id="productsGrid"></div>
-
-        <div class="product-card">
-
-            <img src="https://picsum.photos/300/300?random=1" alt="Ürün">
-
-            <h3>Kablosuz Kulaklık Pro</h3>
-
-            <p class="price">1.299 TL</p>
-
-            <button class="add-cart-btn">
-                🛒 Sepete Ekle
-            </button>
-
-        </div>
-
-        <div class="product-card">
-
-            <img src="https://picsum.photos/300/300?random=2" alt="Ürün">
-
-            <h3>Akıllı Saat X</h3>
-
-            <p class="price">2.799 TL</p>
-
-            <button class="add-cart-btn">
-                🛒 Sepete Ekle
-            </button>
-
-        </div>
-
-        <div class="product-card">
-
-            <img src="https://picsum.photos/300/300?random=3" alt="Ürün">
-
-            <h3>Oyuncu Klavyesi RGB</h3>
-
-            <p class="price">1.099 TL</p>
-
-            <button class="add-cart-btn">
-                🛒 Sepete Ekle
-            </button>
-
-        </div>
-
-        <div class="product-card">
-
-            <img src="https://picsum.photos/300/300?random=4" alt="Ürün">
-
-            <h3>Bluetooth Hoparlör</h3>
-
-            <p class="price">899 TL</p>
-
-            <button class="add-cart-btn">
-                🛒 Sepete Ekle
-            </button>
-
-        </div>
-
-    </div>
+    <div id="productsGrid" class="products-grid"></div>
 
 </section>
-    <!-- KAMPANYALAR -->
-
-<section class="campaigns">
-
-    <h2 class="section-title">
-        Günün Fırsatları
-    </h2>
-
-    <div class="campaign-grid">
-
-        <div class="campaign-card">
-            <h3>%50'ye Varan İndirim</h3>
-            <p>Elektronik ürünlerde kaçırılmayacak fırsatlar.</p>
-        </div>
-
-        <div class="campaign-card">
-            <h3>Ücretsiz Kargo</h3>
-            <p>750 TL ve üzeri siparişlerde ücretsiz teslimat.</p>
-        </div>
-
-        <div class="campaign-card">
-            <h3>Yeni Üyelere Özel</h3>
-            <p>İlk alışverişte ekstra indirim kuponu.</p>
-        </div>
-
-    </div>
-
-</section>
-
-<!-- FOOTER -->
 
 <footer class="footer">
 
     <h2>Sepetio</h2>
 
-    <p>
-        © 2026 Sepetio. Tüm hakları saklıdır.
-    </p>
+    <p>© 2026 Tüm Hakları Saklıdır.</p>
 
 </footer>
 
-    <script src="urunler.js"></script>
+<script src="urunler.js"></script>
 <script src="app.js"></script>
 
 </body>
