@@ -70,3 +70,10 @@ const urunler = [
 }
 
 ];
+{
+    id:9,
+    ad:"Yeni Ürün",
+    fiyat:999,
+    kategori:"Elektronik",
+    resim:"resimler/yeni-urun.jpg"
+}
