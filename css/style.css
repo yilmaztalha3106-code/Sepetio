@@ -1514,3 +1514,66 @@ width:100%;
 .footer h2{
     margin-bottom:12px;
 }
+/* ===============================
+   Gelişmiş Ürün Kartı
+================================ */
+
+.product-card{
+    position:relative;
+}
+
+.product-info{
+    padding:18px;
+}
+
+.category{
+    display:inline-block;
+    background:#eef4ff;
+    color:#0d6efd;
+    padding:5px 10px;
+    border-radius:20px;
+    font-size:13px;
+    margin-bottom:10px;
+}
+
+.rating{
+    margin:10px 0;
+    color:#ffb400;
+    font-size:15px;
+}
+
+.rating span{
+    color:#777;
+}
+
+.discount-badge{
+    position:absolute;
+    top:15px;
+    left:15px;
+    background:#ff3b30;
+    color:white;
+    padding:6px 10px;
+    border-radius:8px;
+    font-weight:bold;
+    font-size:13px;
+}
+
+.favorite-icon{
+    position:absolute;
+    top:15px;
+    right:15px;
+    width:42px;
+    height:42px;
+    border-radius:50%;
+    background:white;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    cursor:pointer;
+    box-shadow:0 5px 15px rgba(0,0,0,.15);
+    transition:.3s;
+}
+
+.favorite-icon:hover{
+    transform:scale(1.1);
+}
