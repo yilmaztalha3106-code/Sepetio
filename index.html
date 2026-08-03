@@ -2,138 +2,188 @@
 <html lang="tr">
 
 <head>
-
 <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<meta name="viewport"
-content="width=device-width, initial-scale=1.0">
+<title>Sepetio - Online Alışveriş</title>
 
-<title>Sepetio</title>
-
-<link rel="preconnect"
-href="https://fonts.googleapis.com">
-
-<link rel="preconnect"
-href="https://fonts.gstatic.com"
-crossorigin>
-
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
-rel="stylesheet">
-
-<link rel="stylesheet"
-href="style.css">
-
-<link rel="icon"
-href="assets/icons/logo.png">
+<link rel="stylesheet" href="style.css">
 
 </head>
 
 <body>
 
-<!-- LOADER -->
-
-<div id="loader">
-
-    <div class="loader-logo">
-
-        <h1>Sepetio</h1>
-
-    </div>
-
-</div>
-
-<!-- HEADER -->
-
-<header class="header">
-
-<div class="container">
+<header>
 
 <div class="logo">
-
-<a href="index.html">
-
-<h1>Sepetio</h1>
-
-</a>
-
+    Sepetio
 </div>
 
-<form class="search-form">
-
-<input
-type="text"
-placeholder="Ürün, marka veya kategori ara...">
-
-<button
-type="submit">
-
-🔍
-
-</button>
-
-</form>
-
-<div class="header-actions">
-
-<button
-class="icon-btn favorite-btn">
-
-❤️
-
-</button>
-
-<button
-class="icon-btn cart-btn">
-
-🛒
-
-<span class="cart-count">
-
-0
-
-</span>
-
-</button>
-
-<button
-class="login-btn">
-
-Giriş Yap
-
-</button>
-
+<div class="search-box">
+    <input type="text" placeholder="Ürün, kategori veya marka ara...">
+    <button>Ara</button>
 </div>
 
+<div class="header-buttons">
+    <button>Giriş Yap</button>
+    <button>Sepetim 🛒</button>
 </div>
 
 </header>
 
-<!-- MENÜ -->
 
-<nav class="navbar">
+<nav>
 
-<div class="container">
+<a href="#">Elektronik</a>
+<a href="#">Moda</a>
+<a href="#">Ev & Yaşam</a>
+<a href="#">Kozmetik</a>
+<a href="#">Spor</a>
+<a href="#">Tüm Kategoriler</a>
 
-<ul>
+</nav>
 
-<li><a href="#">Elektronik</a></li>
 
-<li><a href="#">Bilgisayar</a></li>
+<section class="hero">
 
-<li><a href="#">Telefon</a></li>
+<div>
+<h1>Türkiye'nin Yeni Nesil Alışveriş Platformu</h1>
 
-<li><a href="#">Moda</a></li>
+<p>
+Binlerce ürün, uygun fiyat ve güvenli alışveriş deneyimi.
+</p>
 
-<li><a href="#">Ev & Yaşam</a></li>
-
-<li><a href="#">Spor</a></li>
-
-<li><a href="#">Kozmetik</a></li>
-
-<li><a href="#">Market</a></li>
-
-</ul>
+<button class="hero-button">
+Alışverişe Başla
+</button>
 
 </div>
 
-</nav>
+</section>
+
+
+<section class="campaigns">
+
+<h2>Kampanyalar</h2>
+
+<div class="campaign-grid">
+
+<div>
+<h3>Büyük İndirim</h3>
+<p>Seçili ürünlerde fırsatlar</p>
+</div>
+
+<div>
+<h3>Yeni Üyelere Özel</h3>
+<p>Avantajlı alışveriş fırsatı</p>
+</div>
+
+<div>
+<h3>Ücretsiz Kargo</h3>
+<p>Belirli ürünlerde geçerli</p>
+</div>
+
+</div>
+
+</section>
+
+
+
+<section class="products">
+
+<h2>Öne Çıkan Ürünler</h2>
+
+
+<div class="product-grid">
+
+
+<div class="product-card">
+
+<img src="https://via.placeholder.com/250">
+
+<h3>Akıllı Telefon</h3>
+
+<p class="price">
+19.999 TL
+</p>
+
+<button>
+Sepete Ekle
+</button>
+
+</div>
+
+
+
+<div class="product-card">
+
+<img src="https://via.placeholder.com/250">
+
+<h3>Kablosuz Kulaklık</h3>
+
+<p class="price">
+1.299 TL
+</p>
+
+<button>
+Sepete Ekle
+</button>
+
+</div>
+
+
+
+<div class="product-card">
+
+<img src="https://via.placeholder.com/250">
+
+<h3>Akıllı Saat</h3>
+
+<p class="price">
+2.499 TL
+</p>
+
+<button>
+Sepete Ekle
+</button>
+
+</div>
+
+
+
+</div>
+
+</section>
+
+
+
+<section class="seller">
+
+<h2>Satıcı Ol</h2>
+
+<p>
+Ürünlerini yükle, milyonlarca müşteriye ulaş.
+</p>
+
+<button>
+Mağaza Aç
+</button>
+
+</section>
+
+
+
+<footer>
+
+<p>
+© 2026 Sepetio. Tüm hakları saklıdır.
+</p>
+
+</footer>
+
+
+<script src="app.js"></script>
+
+</body>
+
+</html>
