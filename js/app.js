@@ -42,7 +42,41 @@ if(searchForm){
         const input = searchForm.querySelector("input");
 
         if(input.value.trim() !== ""){
+/* ==========================================================
+   Ürünleri Otomatik Oluştur
+========================================================== */
 
+const productsGrid = document.getElementById("productsGrid");
+
+if (productsGrid && typeof urunler !== "undefined") {
+
+    productsGrid.innerHTML = "";
+
+    urunler.forEach(urun => {
+
+        productsGrid.innerHTML += `
+            <div class="product-card">
+
+                <img src="${urun.resim}" alt="${urun.ad}">
+
+                <h3>${urun.ad}</h3>
+
+                <p class="price">
+                    ${urun.fiyat.toLocaleString("tr-TR")} TL
+                </p>
+
+                <button
+                    class="add-cart-btn"
+                    data-id="${urun.id}">
+                    🛒 Sepete Ekle
+                </button>
+
+            </div>
+        `;
+
+    });
+
+}
             alert(
                 `"${input.value}" için arama yapılıyor...`
             );
