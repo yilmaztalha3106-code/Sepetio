@@ -48,24 +48,38 @@ function urunleriGoster() {
     urunler.forEach((urun) => {
 
         productsGrid.innerHTML += `
-        <div class="product-card">
+<div class="product-card">
 
-            <img src="${urun.resim}" alt="${urun.ad}">
+    <div class="discount-badge">-%25</div>
 
-            <h3>${urun.ad}</h3>
+    <div class="favorite-icon">❤</div>
 
-            <p class="price">
-                ${urun.fiyat.toLocaleString("tr-TR")} TL
-            </p>
+    <img src="${urun.resim}" alt="${urun.ad}">
 
-            <button
-                class="add-cart-btn"
-                data-id="${urun.id}">
-                🛒 Sepete Ekle
-            </button>
+    <div class="product-info">
 
+        <span class="category">${urun.kategori}</span>
+
+        <h3>${urun.ad}</h3>
+
+        <div class="rating">
+            ⭐⭐⭐⭐⭐ <span>(248)</span>
         </div>
-        `;
+
+        <p class="price">
+            ${urun.fiyat.toLocaleString("tr-TR")} TL
+        </p>
+
+        <button
+            class="add-cart-btn"
+            data-id="${urun.id}">
+            🛒 Sepete Ekle
+        </button>
+
+    </div>
+
+</div>
+`;
 
     });
 
